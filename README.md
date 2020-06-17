@@ -1,2 +1,2 @@
 # parallel
-parallel techniques
+parallel computing
