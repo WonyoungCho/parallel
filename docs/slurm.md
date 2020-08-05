@@ -1,6 +1,7 @@
 # Slurm
 Slurm is a job scheduler which is used in a cluster server. It has their own command to run program.
 
+# SINFO
 ```
 $ sinfo -lN
 NODELIST   NODES PARTITION       STATE CPUS    S:C:T MEMORY TMP_DISK WEIGHT AVAIL_FE REASON
@@ -9,7 +10,7 @@ g-12           1      all*       mixed    6    1:6:1 120000        0      1   (n
 ```
 
 
-# Run jobs
+# SRUN
 ```
 $ for i in {30..50};do srun -c2 --mem=5000 -J cal_${i} ldtable.py -th 0.01 -rh 101,100 -n ${i} --approx -c 2 & done
 ```
@@ -20,7 +21,7 @@ $ for i in {30..50};do srun -c2 --mem=5000 -J cal_${i} ldtable.py -th 0.01 -rh 1
 Note that if you do not assign `--mem`, only one task will be allocated to one node even the node has available cpus.
 
 
-# List of jobs
+# SQUEUE
 ```
 $ squeue -S LIST -l
 Wed Aug  5 16:18:30 2020
@@ -33,7 +34,7 @@ Wed Aug  5 16:18:30 2020
 ```
 
 
-# Cancel jobs
+# SCANCEL
 ```
 $ scancel -uycho
 ```
