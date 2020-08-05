@@ -15,9 +15,10 @@ g-12           1      all*       mixed    6    1:6:1 120000        0      1   (n
 ```
 $ for i in {30..50};do srun -c2 --mem=5000 -J cal_${i} ldtable.py -th 0.01 -rh 101,100 -n ${i} --approx -c 2 & done
 ```
-- `srun` : it sends a command to queue.
+- `srun` : send a command to queue.
 - `-c2` : number of cpus required per task
 - `--mem=5000` : minimum amount of real memory (--mem=MB)
+- `-J cal_${i}` : name of job
 
 Note that if you do not assign `--mem`, only one task will be allocated to one node even the node has available cpus.
 
