@@ -1,4 +1,3 @@
-# Slurm
 Slurm is a workload manager which is used in a cluster server. It has their own command to run jobs.
 
 <https://slurm.schedmd.com/documentation.html>
