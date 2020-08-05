@@ -101,3 +101,13 @@ def sendfile() :
   with settings(user='ycho',password='******'):
     put('myfile.txt','/home/user/data/')
 ```
+
+
+# Reference
+- Parallel annotation <http://webmcr.blog.me/221571178865>
+- Warn_only option <http://webmcr.blog.me/221571176726>
+- Rsync <http://webmcr.blog.me/221571172213>
+- Send file <http://webmcr.blog.me/221571169336>
+- Task annotation <http://webmcr.blog.me/221571165170>
+- Login server <http://webmcr.blog.me/221571156393>
+
