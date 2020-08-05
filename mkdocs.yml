@@ -9,6 +9,7 @@ extra_javascript: [docs.js]
 pages:
     - Home: 'index.md'
     - Slurm: 'slurm.md'
+    - Fabric: 'fabric.md'
     - Linux shell:
         - 'Parallel' : 'parallel.md'
 
