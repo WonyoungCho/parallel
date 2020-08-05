@@ -1,5 +1,5 @@
 # Slurm
-Slurm is a job scheduler which is used in a cluster server. It has their own command to run program.
+Slurm is a job scheduler which is used in a cluster server. It has their own command to run jobs.
 
 # SINFO
 ```
