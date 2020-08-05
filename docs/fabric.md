@@ -89,3 +89,15 @@ Total number of jobs: 10
 4   192.168.10.105   0.05  62G  483M   61G  514M  61G
 ...
 ```
+
+# Send file
+```
+from fabric.api import local, run, put, settings, env
+
+# send file to 101 and 102.
+env.hosts = ['192.168.10.101','192.168.10.102']
+
+def sendfile() :
+  with settings(user='ycho',password='******'):
+    put('myfile.txt','/home/user/data/')
+```
